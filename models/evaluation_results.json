@@ -1,0 +1,129 @@
+{
+  "best_model_name": "Linear SVM (calibrated)",
+  "cv_results": {
+    "Logistic Regression": {
+      "cv_folds": 5,
+      "accuracy_mean": 0.974039603960396,
+      "accuracy_std": 0.008030038693522515,
+      "macro_precision_mean": 0.975142390289449,
+      "macro_recall_mean": 0.9739750445632799,
+      "macro_f1_mean": 0.9739791376314642,
+      "macro_f1_std": 0.008225434617144506,
+      "weighted_precision_mean": 0.9750950367935953,
+      "weighted_recall_mean": 0.974039603960396,
+      "weighted_f1_mean": 0.9739872483801169,
+      "per_fold_accuracy": [
+        0.9801980198019802,
+        0.98,
+        0.98,
+        0.97,
+        0.96
+      ],
+      "per_fold_macro_f1": [
+        0.9803751803751805,
+        0.9800927489250579,
+        0.9800927489250579,
+        0.9696280502250652,
+        0.9597069597069597
+      ]
+    },
+    "Linear SVM (calibrated)": {
+      "cv_folds": 5,
+      "accuracy_mean": 0.978059405940594,
+      "accuracy_std": 0.0116216875372558,
+      "macro_precision_mean": 0.9799517784037908,
+      "macro_recall_mean": 0.9780154486036841,
+      "macro_f1_mean": 0.9783307417168043,
+      "macro_f1_std": 0.01139605879271204,
+      "weighted_precision_mean": 0.9797230502733981,
+      "weighted_recall_mean": 0.978059405940594,
+      "weighted_f1_mean": 0.9782332690044271,
+      "per_fold_accuracy": [
+        0.9702970297029703,
+        0.99,
+        0.99,
+        0.96,
+        0.98
+      ],
+      "per_fold_macro_f1": [
+        0.9706862777285313,
+        0.990049751243781,
+        0.990049751243781,
+        0.9606481481481483,
+        0.9802197802197803
+      ]
+    }
+  },
+  "full_dataset_report": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_precision": 1.0,
+    "weighted_recall": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "High": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 167
+      },
+      "Low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 167
+      },
+      "Medium": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 167
+      }
+    },
+    "confusion_matrix": [
+      [
+        167,
+        0,
+        0
+      ],
+      [
+        0,
+        167,
+        0
+      ],
+      [
+        0,
+        0,
+        167
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "High",
+      "Low",
+      "Medium"
+    ]
+  },
+  "feature_columns": [
+    "Activity",
+    "Location Type",
+    "Time",
+    "Description"
+  ],
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "dataset_info": {
+    "total_records": 501,
+    "severity_distribution": {
+      "High": 167,
+      "Medium": 167,
+      "Low": 167
+    },
+    "n_folds": 5,
+    "random_state": 42
+  }
+}

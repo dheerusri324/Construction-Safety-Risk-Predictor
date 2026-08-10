@@ -19,6 +19,13 @@ import pickle
 import warnings
 warnings.filterwarnings("ignore")
 
+# Auto-load .env file if it exists (Azure OpenAI keys etc.)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed — env vars must be set manually
+
 import pandas as pd
 import numpy as np
 import streamlit as st
